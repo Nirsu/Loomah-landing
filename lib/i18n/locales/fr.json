@@ -1,0 +1,110 @@
+{
+  "hero": {
+    "tagline": "Pour les petits moments en famille",
+    "headline": "Explorez les lieux family-friendly en toute confiance",
+    "description": "Enregistrez et découvrez les endroits adaptés aux bébés autour de vous : cafés, restaurants, parcs et espaces où votre famille est vraiment la bienvenue.",
+    "email_placeholder": "Votre adresse email",
+    "cta_button": "S'enregistrer",
+    "coming_soon": "Bientôt disponible, soyez les premiers informés !"
+  },
+  "what": {
+    "badge": "Comment ça marche",
+    "title": "Trouver des lieux family-friendly est souvent un casse-tête !",
+    "subtitle": "Avec Loomah, découvrez instantanément des adresses partagées et validées par d'autres parents.",
+    "features": {
+      "search": {
+        "title": "Recherchez & Filtrez",
+        "description": "Trouvez des lieux family-friendly et filtrez par équipement : table à langer, chaise haute, aire de jeux, accès poussette...",
+        "highlight": "Testés par des parents"
+      },
+      "details": {
+        "title": "Fiches complètes",
+        "description": "Consultez les informations détaillées de chaque lieu : équipements, notes, avis, photos et horaires.",
+        "badges": ["⭐ Notes", "📝 Avis", "📷 Photos", "⏰ Horaires"]
+      },
+      "verified": {
+        "title": "Lieux vérifiés",
+        "description": "Faites confiance aux lieux certifiés par notre équipe ou approuvés par la communauté de parents.",
+        "loomah": "Certifié Loomah",
+        "community": "Approuvé par les parents"
+      },
+      "save": {
+        "title": "Sauvegardez vos favoris",
+        "description": "Enregistrez vos adresses préférées et retrouvez-les en un clin d'œil quand vous en avez besoin."
+      }
+    }
+  },
+  "why": {
+    "badge": "Pourquoi Loomah ?",
+    "title": "Simplifiez vos sorties en famille",
+    "subtitle": "Profitez de chaque moment avec vos petits sans le stress de la planification.",
+    "benefits": [
+      {
+        "emoji": "🍼",
+        "title": "Filtres bébé-friendly",
+        "description": "Trouvez les lieux avec tables à langer, chauffe-biberons et espaces allaitement."
+      },
+      {
+        "emoji": "➕",
+        "title": "Partagez vos découvertes",
+        "description": "Ajoutez vos propres adresses et aidez d'autres parents à trouver des lieux accueillants."
+      },
+      {
+        "emoji": "💜",
+        "title": "Communauté de parents",
+        "description": "Bénéficiez des recommandations de parents qui connaissent les bons plans."
+      }
+    ],
+    "quote": "Les meilleurs souvenirs sont les plus simples. Un café avec bébé qui dort paisiblement, un après-midi ensoleillé au parc."
+  },
+  "visual": {
+    "badge": "Simple & Intuitif",
+    "title": "Tous vos spots famille, dans votre poche",
+    "description": "Ouvrez l'app, voyez ce qu'il y a autour, et découvrez des lieux qui accueillent vraiment votre famille. Pas de filtres compliqués, pas de scroll infini.",
+    "features": [
+      "Voyez les lieux bébé-friendly sur une carte",
+      "Lisez les avis authentiques de parents",
+      "Vérifiez les équipements avant de partir",
+      "Sauvegardez et organisez vos favoris"
+    ],
+    "app": {
+      "header": "Près de vous",
+      "subtitle": "3 lieux family-friendly",
+      "place1": {
+        "name": "Café Cosy",
+        "description": "Accès poussette"
+      },
+      "place2": {
+        "name": "Parc Ensoleillé",
+        "description": "Aire de jeux • Calme"
+      }
+    }
+  },
+  "testimonials": {
+    "badge": "Ils adorent Loomah",
+    "title": "Rejoignez des milliers de parents satisfaits",
+    "reviews": [
+      {
+        "name": "Sophie",
+        "text": "Enfin une app qui comprend les parents ! J'enregistre tous les cafés où je peux allaiter tranquillement. Indispensable ! 💜"
+      },
+      {
+        "name": "Thomas",
+        "text": "En tant que papa, j'adore pouvoir vérifier s'il y a une table à langer avant d'aller quelque part. Révolutionnaire !"
+      },
+      {
+        "name": "Marie",
+        "text": "On voyage beaucoup avec notre petit. Loomah nous aide à trouver les meilleurs spots où qu'on soit. Génial !"
+      }
+    ]
+  },
+  "footer": {
+    "cta_title": "Prêt à explorer le monde avec votre famille ?",
+    "cta_subtitle": "Rejoignez les parents qui profitent déjà de sorties sans stress avec Loomah.",
+    "email_placeholder": "Votre adresse email",
+    "cta_button": "S'enregistrer",
+    "spam_notice": "Nous respectons votre vie privée. Jamais de spam 😊",
+    "tagline": "Pour les petits moments en famille",
+    "copyright": "Fait avec ❤️ pour les parents"
+  }
+}

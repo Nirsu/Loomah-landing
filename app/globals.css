@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+:root {
+  /* Improved contrast palette */
+  --background: #FFF9F5;
+  --foreground: #2D2A26;
+  --text-dark: #2D2A26;
+  --text-light: #5C5550;
+  
+  /* Pastel tones - soft & warm */
+  --pastel-purple: #FFF5EE;
+  --pastel-lavender: #FFEEE5;
+  --pastel-violet: #F4B7A6;
+  --pastel-peach: #FFF0E8;
+  --pastel-cream: #FFFBF8;
+  --pastel-mint: #E8F5F0;
+  --pastel-pink: #FFE5DC;
+  
+  /* Accent colors - better contrast */
+  --accent-primary: #E8956F;
+  --accent-secondary: #E07830;
+  --accent-light: #FFD4C2;
+  --accent-pink: #E8956F;
+  --accent-green: #5A9A7F;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-nunito);
+  
+  --color-pastel-purple: var(--pastel-purple);
+  --color-pastel-lavender: var(--pastel-lavender);
+  --color-pastel-violet: var(--pastel-violet);
+  --color-pastel-peach: var(--pastel-peach);
+  --color-pastel-cream: var(--pastel-cream);
+  --color-pastel-mint: var(--pastel-mint);
+  --color-pastel-pink: var(--pastel-pink);
+  --color-accent-primary: var(--accent-primary);
+  --color-accent-secondary: var(--accent-secondary);
+  --color-accent-light: var(--accent-light);
+  --color-accent-pink: var(--accent-pink);
+  --color-accent-green: var(--accent-green);
+  --color-text-dark: var(--text-dark);
+  --color-text-light: var(--text-light);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom animations */
+@keyframes bounce-slow {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(2deg);
+  }
+}
+
+.animate-bounce-slow {
+  animation: bounce-slow 3s ease-in-out infinite;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}

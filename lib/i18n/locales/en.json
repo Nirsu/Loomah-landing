@@ -1,0 +1,110 @@
+{
+  "hero": {
+    "tagline": "For the little moments that matter",
+    "headline": "Explore family-friendly places with confidence",
+    "description": "Save and discover baby-friendly spots near you: cafés, restaurants, parks and spaces where your family is truly welcome.",
+    "email_placeholder": "Your email address",
+    "cta_button": "Sign up",
+    "coming_soon": "Coming soon, be the first to know!"
+  },
+  "what": {
+    "badge": "How it works",
+    "title": "Finding family-friendly places shouldn't be a headache!",
+    "subtitle": "With Loomah, instantly discover spots shared and approved by other parents.",
+    "features": {
+      "search": {
+        "title": "Find & Filter",
+        "description": "Search for family-friendly places and filter by equipment: changing table, high chair, play area, stroller access...",
+        "highlight": "Tested by parents"
+      },
+      "details": {
+        "title": "Complete listings",
+        "description": "View detailed information for each place: equipment, ratings, reviews, photos and opening hours.",
+        "badges": ["⭐ Ratings", "📝 Reviews", "📷 Photos", "⏰ Hours"]
+      },
+      "verified": {
+        "title": "Verified places",
+        "description": "Trust places certified by our team or approved by the parent community.",
+        "loomah": "Certified by Loomah",
+        "community": "Approved by parents"
+      },
+      "save": {
+        "title": "Save your favorites",
+        "description": "Bookmark your favorite spots and find them instantly when you need them."
+      }
+    }
+  },
+  "why": {
+    "badge": "Why Loomah?",
+    "title": "Simplify your family outings",
+    "subtitle": "Enjoy every moment with your little ones without the stress of planning.",
+    "benefits": [
+      {
+        "emoji": "🍼",
+        "title": "Baby-friendly filters",
+        "description": "Find places with changing tables, bottle warmers, and nursing areas."
+      },
+      {
+        "emoji": "➕",
+        "title": "Share your discoveries",
+        "description": "Add your own spots and help other parents find welcoming places."
+      },
+      {
+        "emoji": "💜",
+        "title": "Parent community",
+        "description": "Benefit from recommendations by parents who've been there."
+      }
+    ],
+    "quote": "The best memories are the simple ones. A coffee with your baby sleeping peacefully, a sunny afternoon at the park."
+  },
+  "visual": {
+    "badge": "Simple & Intuitive",
+    "title": "All your family spots, in your pocket",
+    "description": "Open the app, see what's nearby, and discover places that truly welcome your family. No complicated filters, no endless scrolling.",
+    "features": [
+      "See baby-friendly spots on a map",
+      "Read authentic reviews from parents",
+      "Check amenities before you go",
+      "Save and organize your favorites"
+    ],
+    "app": {
+      "header": "Near you",
+      "subtitle": "3 family-friendly spots",
+      "place1": {
+        "name": "Cozy Café",
+        "description": "Stroller friendly"
+      },
+      "place2": {
+        "name": "Sunny Park",
+        "description": "Play area • Quiet"
+      }
+    }
+  },
+  "testimonials": {
+    "badge": "They love Loomah",
+    "title": "Join thousands of happy parents",
+    "reviews": [
+      {
+        "name": "Sophie",
+        "text": "Finally an app that understands parents! I save all the cafés where I can breastfeed in peace. Essential! 💜"
+      },
+      {
+        "name": "Thomas",
+        "text": "As a dad, I love being able to check if there's a changing table before going anywhere. Game changer!"
+      },
+      {
+        "name": "Marie",
+        "text": "We travel a lot with our toddler. Loomah helps us find the best spots wherever we go. Amazing!"
+      }
+    ]
+  },
+  "footer": {
+    "cta_title": "Ready to explore the world with your family?",
+    "cta_subtitle": "Join parents who are already enjoying stress-free outings with Loomah.",
+    "email_placeholder": "Your email address",
+    "cta_button": "Sign up",
+    "spam_notice": "We respect your privacy. No spam, ever 😊",
+    "tagline": "For the little moments that matter",
+    "copyright": "Made with ❤️ for parents"
+  }
+}
