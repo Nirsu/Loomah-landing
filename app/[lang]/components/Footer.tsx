@@ -6,6 +6,10 @@ interface FooterDict {
   spam_notice: string;
   tagline: string;
   copyright: string;
+  product: string;
+  features: string;
+  why_loomah: string;
+  contact: string;
 }
 
 export default function Footer({ dict }: { dict: FooterDict }) {
@@ -46,7 +50,7 @@ export default function Footer({ dict }: { dict: FooterDict }) {
           {/* Logo and tagline */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <h3 className="text-2xl font-bold">Loomah</h3>
+              <img src="/logo.svg" alt="Loomah" className="h-8 w-auto brightness-0 invert" />
             </div>
             <p className="text-gray-400 max-w-xs">
               {dict.tagline}
@@ -81,16 +85,16 @@ export default function Footer({ dict }: { dict: FooterDict }) {
           
           {/* Product links */}
           <div>
-            <h4 className="font-semibold mb-4 text-white">Produit</h4>
+            <h4 className="font-semibold mb-4 text-white">{dict.product}</h4>
             <ul className="space-y-3 text-gray-400">
-              <li><a href="#features" className="hover:text-white transition-colors">Fonctionnalités</a></li>
-              <li><a href="#why" className="hover:text-white transition-colors">Pourquoi Loomah</a></li>
+              <li><a href="#features" className="hover:text-white transition-colors">{dict.features}</a></li>
+              <li><a href="#why" className="hover:text-white transition-colors">{dict.why_loomah}</a></li>
             </ul>
           </div>
           
           {/* Company links */}
           <div>
-            <h4 className="font-semibold mb-4 text-white">Contact</h4>
+            <h4 className="font-semibold mb-4 text-white">{dict.contact}</h4>
             <ul className="space-y-3 text-gray-400">
               <li><a href="mailto:contact@loomah.fr" className="hover:text-white transition-colors">contact@loomah.fr</a></li>
             </ul>
@@ -100,7 +104,7 @@ export default function Footer({ dict }: { dict: FooterDict }) {
         {/* Footer bottom */}
         <div className="flex flex-col md:flex-row items-center justify-center gap-2 pt-8 border-t border-gray-800">
           <div className="text-sm text-gray-500 flex items-center gap-1">
-            © {new Date().getFullYear()} Loomah · Fait avec <span className="text-red-500">❤️</span> pour les parents
+            © {new Date().getFullYear()} Loomah · {dict.copyright}
           </div>
         </div>
       </div>

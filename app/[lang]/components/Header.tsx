@@ -1,5 +1,6 @@
 import type { Locale } from "@/lib/i18n/config";
 import LanguageSwitcher from "./LanguageSwitcher";
+import Image from "next/image";
 
 interface HeaderProps {
   lang: Locale;
@@ -11,7 +12,7 @@ export default function Header({ lang }: HeaderProps) {
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <a href={`/${lang}`} className="flex items-center gap-2">
-          <span className="text-xl font-bold text-text-dark">Loomah</span>
+          <Image src="/logo.svg" alt="Loomah" width={120} height={32} priority />
         </a>
         
         {/* Language Switcher */}
