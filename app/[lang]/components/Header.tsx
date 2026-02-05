@@ -8,15 +8,27 @@ interface HeaderProps {
 
 export default function Header({ lang }: HeaderProps) {
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-accent-light/30">
-      <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        {/* Logo */}
-        <a href={`/${lang}`} className="flex items-center gap-2">
-          <Image src="/logo.svg" alt="Loomah" width={120} height={32} priority />
-        </a>
-        
-        {/* Language Switcher */}
-        <LanguageSwitcher currentLang={lang} />
+    <header className="fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[calc(100%-2rem)] max-w-5xl">
+      <div className="glass-strong rounded-2xl shadow-lg shadow-black/5">
+        <div className="px-6 py-3 flex items-center justify-between">
+          {/* Logo */}
+          <a href={`/${lang}`} className="flex items-center gap-2 transition-transform hover:scale-105">
+            <Image src="/logo.svg" alt="Loomah" width={110} height={28} priority />
+          </a>
+          
+          {/* Navigation */}
+          <nav className="hidden md:flex items-center gap-8">
+            <a href="#features" className="text-sm font-medium text-text-light hover:text-accent-secondary transition-colors">
+              Features
+            </a>
+            <a href="#why" className="text-sm font-medium text-text-light hover:text-accent-secondary transition-colors">
+              Why Loomah
+            </a>
+          </nav>
+          
+          {/* Language Switcher */}
+          <LanguageSwitcher currentLang={lang} />
+        </div>
       </div>
     </header>
   );

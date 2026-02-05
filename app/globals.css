@@ -1,27 +1,31 @@
 @import "tailwindcss";
 
 :root {
-  /* Improved contrast palette */
-  --background: #FFF9F5;
-  --foreground: #2D2A26;
-  --text-dark: #2D2A26;
-  --text-light: #5C5550;
+  /* Modern contrast palette */
+  --background: #FAFAFA;
+  --foreground: #18181B;
+  --text-dark: #18181B;
+  --text-light: #71717A;
   
-  /* Pastel tones - soft & warm */
-  --pastel-purple: #FFF5EE;
-  --pastel-lavender: #FFEEE5;
-  --pastel-violet: #F4B7A6;
-  --pastel-peach: #FFF0E8;
-  --pastel-cream: #FFFBF8;
-  --pastel-mint: #E8F5F0;
-  --pastel-pink: #FFE5DC;
+  /* Modern pastel tones */
+  --pastel-purple: #F5F3FF;
+  --pastel-lavender: #FDF4FF;
+  --pastel-violet: #DDD6FE;
+  --pastel-peach: #FFF7ED;
+  --pastel-cream: #FFFBEB;
+  --pastel-mint: #ECFDF5;
+  --pastel-pink: #FDF2F8;
   
-  /* Accent colors - better contrast */
-  --accent-primary: #E8956F;
-  --accent-secondary: #E07830;
-  --accent-light: #FFD4C2;
-  --accent-pink: #E8956F;
-  --accent-green: #5A9A7F;
+  /* Modern accent colors */
+  --accent-primary: #F97316;
+  --accent-secondary: #EA580C;
+  --accent-light: #FFEDD5;
+  --accent-pink: #FB923C;
+  --accent-green: #10B981;
+  
+  /* Glass effect colors */
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.2);
 }
 
 @theme inline {
@@ -73,10 +77,108 @@ html {
   }
 }
 
+@keyframes gradient-shift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .animate-bounce-slow {
   animation: bounce-slow 3s ease-in-out infinite;
 }
 
 .animate-float {
   animation: float 6s ease-in-out infinite;
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient-shift 8s ease infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 4s ease-in-out infinite;
+}
+
+.animate-slide-up {
+  animation: slide-up 0.6s ease-out forwards;
+}
+
+/* Glassmorphism utilities */
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+}
+
+.glass-strong {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Modern card hover effect */
+.card-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.15);
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Modern button shine effect */
+.btn-shine {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-shine::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+  transition: left 0.5s ease;
+}
+
+.btn-shine:hover::before {
+  left: 100%;
 }
