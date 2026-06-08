@@ -6,7 +6,7 @@ import { i18n, type Locale } from "@/lib/i18n/config";
 const nunito = Nunito({
   variable: "--font-nunito",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
+  weight: ["400", "500", "600", "700", "800"],
 });
 
 export async function generateStaticParams() {
@@ -28,13 +28,14 @@ export async function generateMetadata({
         "Find baby-friendly and kid-friendly places around you. Cafés, restaurants, parks and spaces that welcome families. Go out without stress.",
     },
     fr: {
-      title: "Loomah – Pour les petits moments en famille",
+      title: "Loomah – Les bonnes adresses pour sortir avec vos enfants",
       description:
-        "Trouvez des lieux adaptés aux bébés et aux enfants autour de vous. Cafés, restaurants, parcs et espaces qui accueillent les familles. Sortez sans stress.",
+        "Découvrez autour de vous les cafés, restaurants, activités et lieux vraiment adaptés aux familles avec de jeunes enfants.",
     },
   };
 
   return {
+    metadataBase: new URL("https://loomah.fr"),
     title: metadata[lang].title,
     description: metadata[lang].description,
     keywords: [
@@ -51,6 +52,7 @@ export async function generateMetadata({
       title: metadata[lang].title,
       description: metadata[lang].description,
       type: "website",
+      images: ["/screen_app.png"],
     },
   };
 }

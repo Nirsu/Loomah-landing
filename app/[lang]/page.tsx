@@ -16,13 +16,19 @@ export default async function Home({
 
   return (
     <>
-      <Header lang={lang} />
-      <main className="min-h-screen">
-        <Hero dict={dict.hero} />
-        <BentoFeatures dict={dict.what} />
+      <a
+        href="#main"
+        className="focus-ring fixed left-4 top-4 z-[60] -translate-y-24 rounded-lg bg-ink px-4 py-3 text-sm font-bold text-white transition-transform focus:translate-y-0"
+      >
+        {dict.navigation.skip}
+      </a>
+      <Header lang={lang} dict={dict.navigation} />
+      <main id="main">
+        <Hero dict={dict.hero} lang={lang} />
+        <BentoFeatures dict={dict.how} />
         <WhyLoomah dict={dict.why} />
-        <Footer dict={dict.footer} />
       </main>
+      <Footer dict={dict.footer} lang={lang} />
     </>
   );
 }

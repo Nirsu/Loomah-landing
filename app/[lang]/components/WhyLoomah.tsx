@@ -1,98 +1,106 @@
-interface Benefit {
-  emoji: string;
-  title: string;
-  description: string;
+import {
+  Accessibility,
+  BriefcaseBusiness,
+  Coffee,
+  FerrisWheel,
+  ListChecks,
+  Sparkles,
+  UsersRound,
+  Utensils,
+} from "lucide-react";
+
+interface WhyProps {
+  dict: {
+    eyebrow: string;
+    title: string;
+    description: string;
+    benefits: Array<{ title: string; description: string }>;
+    category_label: string;
+    categories: string[];
+    closing: string;
+  };
 }
 
-interface WhyDict {
-  badge: string;
-  title: string;
-  subtitle: string;
-  benefits: Benefit[];
-  quote: string;
-}
+export default function WhyLoomah({ dict }: WhyProps) {
+  const benefitIcons = [Accessibility, ListChecks, UsersRound];
+  const categoryIcons = [
+    Utensils,
+    FerrisWheel,
+    Coffee,
+    BriefcaseBusiness,
+    Sparkles,
+  ];
 
-export default function WhyLoomah({ dict }: { dict: WhyDict }) {
   return (
-    <section id="why" className="py-32 px-6 relative overflow-hidden">
-      {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-b from-pastel-cream via-white to-pastel-purple/20" />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[1000px] bg-gradient-to-r from-pastel-peach/30 via-transparent to-pastel-violet/30 rounded-full blur-3xl" />
-      
-      <div className="max-w-7xl mx-auto relative z-10">
-        {/* Section header */}
-        <div className="text-center mb-20">
-          <span className="inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-accent-secondary/10 to-accent-primary/10 text-accent-secondary rounded-full text-sm font-semibold border border-accent-secondary/20 mb-6">
-            <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-              <path fillRule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clipRule="evenodd" />
-            </svg>
-            {dict.badge}
-          </span>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-text-dark mb-6 tracking-tight">
-            {dict.title}
-          </h2>
-          <p className="text-lg md:text-xl text-text-light max-w-2xl mx-auto">
-            {dict.subtitle}
-          </p>
-        </div>
-        
-        {/* Benefits - Modern cards grid */}
-        <div className="grid md:grid-cols-3 gap-6">
-          {dict.benefits.map((benefit, index) => {
-            const gradientOverlays = [
-              'bg-gradient-to-br from-pastel-peach/50 to-transparent',
-              'bg-gradient-to-br from-pastel-mint/50 to-transparent',
-              'bg-gradient-to-br from-pastel-pink/50 to-transparent'
-            ];
-            const iconGradients = [
-              'bg-gradient-to-br from-pastel-peach to-accent-light',
-              'bg-gradient-to-br from-pastel-mint to-accent-green/30',
-              'bg-gradient-to-br from-pastel-pink to-pastel-violet'
-            ];
-            
-            return (
-              <div 
-                key={benefit.title}
-                className="group glass-strong p-8 rounded-[2rem] card-hover border border-white/50 relative overflow-hidden"
-              >
-                {/* Subtle gradient overlay on hover */}
-                <div className={`absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ${gradientOverlays[index] || gradientOverlays[2]}`} />
-                
-                <div className="relative z-10">
-                  {/* Icon */}
-                  <div className={`w-16 h-16 rounded-2xl flex items-center justify-center text-3xl mb-6 shadow-lg transition-transform group-hover:scale-110 group-hover:-rotate-3 ${iconGradients[index] || iconGradients[2]}`}>
-                    {benefit.emoji}
-                  </div>
-                  
-                  {/* Content */}
-                  <h3 className="text-xl font-bold mb-4 text-text-dark">
-                    {benefit.title}
-                  </h3>
-                  <p className="leading-relaxed text-text-light">
-                    {benefit.description}
-                  </p>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-        
-        {/* Emotional quote - Modern style */}
-        <div className="mt-24 text-center max-w-4xl mx-auto relative">
-          {/* Decorative quote marks */}
-          <div className="absolute -top-8 left-1/2 -translate-x-1/2 text-8xl text-accent-primary/10 font-serif">"</div>
-          
-          <div className="glass-strong rounded-[2rem] p-12 border border-white/50">
-            <p className="text-xl md:text-2xl lg:text-3xl text-text-dark font-medium italic leading-relaxed">
-              {dict.quote}
+    <section
+      id="why"
+      className="paper-noise scroll-mt-20 overflow-hidden bg-paper-warm py-24 sm:py-32"
+    >
+      <div className="mx-auto max-w-[82rem] px-5 sm:px-8 lg:px-12">
+        <div className="grid gap-12 lg:grid-cols-[1.05fr_.95fr] lg:gap-24">
+          <div>
+            <p className="text-sm font-extrabold uppercase tracking-[0.18em] text-terracotta">
+              {dict.eyebrow}
             </p>
-            <div className="mt-8 flex items-center justify-center gap-3">
-              <div className="flex -space-x-2">
-                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-pastel-peach to-accent-light border-2 border-white" />
-                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-pastel-mint to-accent-green/50 border-2 border-white" />
-                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-pastel-pink to-pastel-violet border-2 border-white" />
-              </div>
-              <span className="text-sm text-text-light font-medium">Familles Loomah</span>
+            <h2 className="font-display text-balance mt-4 max-w-2xl text-5xl leading-[0.98] tracking-[-0.04em] sm:text-6xl">
+              {dict.title}
+            </h2>
+            <p className="text-pretty mt-7 max-w-xl text-lg leading-8 text-muted">
+              {dict.description}
+            </p>
+          </div>
+
+          <div className="divide-y divide-terracotta/15 border-y border-terracotta/15">
+            {dict.benefits.map((benefit, index) => {
+              const Icon = benefitIcons[index];
+              return (
+                <article
+                  key={benefit.title}
+                  className="grid grid-cols-[3.25rem_1fr] gap-5 py-7"
+                >
+                  <span className="flex h-12 w-12 items-center justify-center rounded-full bg-white text-terracotta shadow-[0_8px_24px_rgba(83,55,38,0.07)]">
+                    <Icon className="h-6 w-6" strokeWidth={1.75} />
+                  </span>
+                  <div>
+                    <h3 className="text-lg font-extrabold text-ink">
+                      {benefit.title}
+                    </h3>
+                    <p className="text-pretty mt-2 leading-7 text-muted">
+                      {benefit.description}
+                    </p>
+                  </div>
+                </article>
+              );
+            })}
+          </div>
+        </div>
+
+        <div className="mt-20 rounded-[2rem] bg-ink px-6 py-8 text-white sm:px-10 sm:py-10">
+          <div className="grid gap-8 lg:grid-cols-[1fr_auto] lg:items-center">
+            <div>
+              <p className="text-sm font-extrabold uppercase tracking-[0.16em] text-terracotta-soft">
+                {dict.category_label}
+              </p>
+              <p className="font-display text-balance mt-3 max-w-3xl text-3xl leading-tight sm:text-4xl">
+                {dict.closing}
+              </p>
+            </div>
+            <div className="flex flex-wrap gap-2 lg:max-w-[30rem] lg:justify-end">
+              {dict.categories.map((category, index) => {
+                const Icon = categoryIcons[index % categoryIcons.length];
+                return (
+                  <span
+                    key={category}
+                    className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.07] px-4 py-2.5 text-sm font-bold text-white/80"
+                  >
+                    <Icon
+                      className="h-4 w-4 text-terracotta-soft"
+                      strokeWidth={1.75}
+                    />
+                    {category}
+                  </span>
+                );
+              })}
             </div>
           </div>
         </div>

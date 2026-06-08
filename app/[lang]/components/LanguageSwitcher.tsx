@@ -3,42 +3,46 @@
 import { usePathname, useRouter } from "next/navigation";
 import type { Locale } from "@/lib/i18n/config";
 
-interface LanguageSwitcherProps {
-  currentLang: Locale;
-}
+const locales: Locale[] = ["fr", "en"];
 
-export default function LanguageSwitcher({ currentLang }: LanguageSwitcherProps) {
+export default function LanguageSwitcher({
+  currentLang,
+}: {
+  currentLang: Locale;
+}) {
   const pathname = usePathname();
   const router = useRouter();
 
-  const switchLanguage = (newLang: Locale) => {
-    // Replace current locale in pathname with new locale
-    const newPathname = pathname.replace(`/${currentLang}`, `/${newLang}`);
-    router.push(newPathname);
-  };
+  function switchLanguage(locale: Locale) {
+    if (locale !== currentLang) {
+      router.push(pathname.replace(`/${currentLang}`, `/${locale}`));
+    }
+  }
 
   return (
-    <div className="flex items-center gap-1 bg-white/80 backdrop-blur-sm rounded-full p-1 border border-pastel-violet/30 shadow-sm">
-      <button
-        onClick={() => switchLanguage("fr")}
-        className={`px-3 py-1.5 rounded-full text-sm font-medium transition-all duration-200 ${
-          currentLang === "fr"
-            ? "bg-gradient-to-r from-accent-primary to-accent-light text-white shadow-sm"
-            : "text-text-light hover:text-accent-primary"
-        }`}
-      >
-        FR
-      </button>
-      <button
-        onClick={() => switchLanguage("en")}
-        className={`px-3 py-1.5 rounded-full text-sm font-medium transition-all duration-200 ${
-          currentLang === "en"
-            ? "bg-gradient-to-r from-accent-primary to-accent-light text-white shadow-sm"
-            : "text-text-light hover:text-accent-primary"
-        }`}
-      >
-        EN
-      </button>
+    <div
+      className="flex items-center rounded-xl border border-line bg-paper-warm/70 p-1"
+      aria-label={currentLang === "fr" ? "Choisir la langue" : "Choose language"}
+    >
+      {locales.map((locale) => {
+        const isActive = locale === currentLang;
+
+        return (
+          <button
+            key={locale}
+            type="button"
+            onClick={() => switchLanguage(locale)}
+            aria-pressed={isActive}
+            className={`focus-ring min-w-9 rounded-lg px-2.5 py-1.5 text-[0.7rem] font-extrabold tracking-[0.1em] transition duration-200 ${
+              isActive
+                ? "bg-white text-terracotta-dark shadow-[0_3px_10px_rgba(76,53,39,0.08)]"
+                : "text-muted hover:text-terracotta-dark"
+            }`}
+          >
+            {locale.toUpperCase()}
+          </button>
+        );
+      })}
     </div>
   );
 }

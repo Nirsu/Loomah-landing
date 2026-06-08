@@ -1,114 +1,93 @@
 {
+  "navigation": {
+    "skip": "Skip to content",
+    "how": "How it works",
+    "why": "Why Loomah",
+    "waitlist": "Join the waitlist"
+  },
   "hero": {
-    "tagline": "For the little moments that matter",
-    "headline": "Explore family-friendly places with confidence",
-    "description": "Save and discover baby-friendly spots near you: cafés, restaurants, parks and spaces where your family is truly welcome.",
-    "email_placeholder": "Your email address",
-    "cta_button": "Sign up",
-    "coming_soon": "Coming soon, be the first to know!"
-  },
-  "what": {
-    "badge": "How it works",
-    "title": "Finding family-friendly places shouldn't be a headache!",
-    "subtitle": "With Loomah, instantly discover spots shared and approved by other parents.",
-    "features": {
-      "search": {
-        "title": "Find & Filter",
-        "description": "Search for family-friendly places and filter by equipment: changing table, high chair, play area, stroller access...",
-        "highlight": "Tested by parents"
-      },
-      "details": {
-        "title": "Complete listings",
-        "description": "View detailed information for each place: equipment, ratings, reviews, photos and opening hours.",
-        "badges": ["⭐ Ratings", "📝 Reviews", "📷 Photos", "⏰ Hours"]
-      },
-      "verified": {
-        "title": "Verified places",
-        "description": "Trust places certified by our team or approved by the parent community.",
-        "loomah": "Certified by Loomah",
-        "community": "Approved by parents"
-      },
-      "save": {
-        "title": "Save your favorites",
-        "description": "Bookmark your favorite spots and find them instantly when you need them."
-      }
+    "title": "Going out with little ones starts with the right place.",
+    "description": "Loomah helps you find nearby cafés, restaurants, activities and places that truly welcome young children.",
+    "proof": "Free early access, no commitment",
+    "categories": ["Cafés", "Restaurants", "Playgrounds", "Activities", "Coworking"],
+    "preview_label": "Before you go",
+    "preview_title": "Check what really matters",
+    "amenity_stroller": "Stroller access",
+    "amenity_chair": "High chair",
+    "amenity_play": "Play area",
+    "form": {
+      "placeholder": "Your email address",
+      "button": "Join the waitlist",
+      "privacy": "Only useful updates about the launch.",
+      "invalid": "Enter a valid email address.",
+      "success": "You’re on the list. See you soon.",
+      "error": "Signup is temporarily unavailable. Please try again soon."
     }
   },
-  "why": {
-    "badge": "Why Loomah?",
-    "title": "Simplify your family outings",
-    "subtitle": "Enjoy every moment with your little ones without the stress of planning.",
-    "benefits": [
+  "how": {
+    "eyebrow": "As easy as a spontaneous day out",
+    "title": "Open the map. Find a place. Enjoy.",
+    "description": "No more checking several websites to know whether a place works for your family. Loomah brings the useful details together.",
+    "steps": [
       {
-        "emoji": "🍼",
-        "title": "Baby-friendly filters",
-        "description": "Find places with changing tables, bottle warmers, and nursing areas."
+        "number": "01",
+        "title": "See what’s nearby",
+        "description": "Explore the map and discover family-friendly places close to you or around your next destination.",
+        "detail": "Cafés, parks, restaurants, activities and more"
       },
       {
-        "emoji": "➕",
-        "title": "Share your discoveries",
-        "description": "Add your own spots and help other parents find welcoming places."
+        "number": "02",
+        "title": "Filter for your needs",
+        "description": "Quickly spot the amenities that make a real difference with a baby or young child.",
+        "detail": "Changing tables, high chairs, strollers, play areas"
       },
       {
-        "emoji": "💜",
-        "title": "Parent community",
-        "description": "Benefit from recommendations by parents who've been there."
-      }
-    ],
-    "quote": "The best memories are the simple ones. A coffee with your baby sleeping peacefully, a sunny afternoon at the park."
-  },
-  "visual": {
-    "badge": "Simple & Intuitive",
-    "title": "All your family spots, in your pocket",
-    "description": "Open the app, see what's nearby, and discover places that truly welcome your family. No complicated filters, no endless scrolling.",
-    "features": [
-      "See baby-friendly spots on a map",
-      "Read authentic reviews from parents",
-      "Check amenities before you go",
-      "Save and organize your favorites"
-    ],
-    "app": {
-      "header": "Near you",
-      "subtitle": "3 family-friendly spots",
-      "place1": {
-        "name": "Cozy Café",
-        "description": "Stroller friendly"
-      },
-      "place2": {
-        "name": "Sunny Park",
-        "description": "Play area • Quiet"
-      }
-    }
-  },
-  "testimonials": {
-    "badge": "They love Loomah",
-    "title": "Join thousands of happy parents",
-    "reviews": [
-      {
-        "name": "Sophie",
-        "text": "Finally an app that understands parents! I save all the cafés where I can breastfeed in peace. Essential! 💜"
-      },
-      {
-        "name": "Thomas",
-        "text": "As a dad, I love being able to check if there's a changing table before going anywhere. Game changer!"
-      },
-      {
-        "name": "Marie",
-        "text": "We travel a lot with our toddler. Loomah helps us find the best spots wherever we go. Amazing!"
+        "number": "03",
+        "title": "Keep the good ones",
+        "description": "Check the place details, read feedback from other parents and save your favourites for later.",
+        "detail": "Easier decisions before you leave"
       }
     ]
   },
+  "why": {
+    "eyebrow": "Made for real family life",
+    "title": "Less planning. More little moments together.",
+    "description": "Going out with young children should not begin with an investigation. Loomah surfaces the details other platforms overlook.",
+    "benefits": [
+      {
+        "title": "The right criteria, right away",
+        "description": "Stroller access, changing tables, high chairs or play areas: check the essentials before leaving home."
+      },
+      {
+        "title": "Information made for parents",
+        "description": "Every place page focuses on how families are welcomed, without burying you in secondary details."
+      },
+      {
+        "title": "A community that helps",
+        "description": "Parents share discoveries and feedback to make everyone’s next day together a little easier."
+      }
+    ],
+    "category_label": "One map for all your family plans",
+    "categories": ["Lunch", "Play", "Coffee", "Work", "Explore"],
+    "closing": "From your neighbourhood café to a midweek activity, your next ideas live in one place."
+  },
   "footer": {
-    "cta_title": "Ready to explore the world with your family?",
-    "cta_subtitle": "Join parents who are already enjoying stress-free outings with Loomah.",
-    "email_placeholder": "Your email address",
-    "cta_button": "Sign up",
-    "spam_notice": "We respect your privacy. No spam, ever 😊",
-    "tagline": "For the little moments that matter",
-    "copyright": "Made with ❤️ by parents for parents",
-    "product": "Product",
-    "features": "Features",
-    "why_loomah": "Why Loomah",
-    "contact": "Contact"
+    "eyebrow": "Loomah is coming soon",
+    "title": "Be among the first to explore.",
+    "description": "Join the waitlist for launch updates and get access as soon as the app becomes available.",
+    "download_note": "At launch, this form will be replaced by App Store and Google Play links.",
+    "tagline": "The right places for the little family moments.",
+    "contact": "Contact us",
+    "instagram": "Instagram",
+    "tiktok": "TikTok",
+    "copyright": "All rights reserved.",
+    "form": {
+      "placeholder": "Your email address",
+      "button": "Join the waitlist",
+      "privacy": "Your address stays private. No spam.",
+      "invalid": "Enter a valid email address.",
+      "success": "You’re on the list. See you soon.",
+      "error": "Signup is temporarily unavailable. Please try again soon."
+    }
   }
 }
