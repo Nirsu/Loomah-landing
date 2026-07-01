@@ -80,6 +80,8 @@
     "contact": "Contact us",
     "instagram": "Instagram",
     "tiktok": "TikTok",
+    "terms": "Terms",
+    "privacy": "Privacy",
     "copyright": "All rights reserved.",
     "form": {
       "placeholder": "Your email address",
@@ -88,6 +90,118 @@
       "invalid": "Enter a valid email address.",
       "success": "You’re on the list. See you soon.",
       "error": "Signup is temporarily unavailable. Please try again soon."
+    }
+  },
+  "legal": {
+    "back_home": "Back home",
+    "updated": "Last updated: July 1, 2026",
+    "terms": {
+      "title": "Terms of Use",
+      "intro": "These terms govern the use of the Loomah website and Loomah mobile app.",
+      "sections": [
+        {
+          "title": "Publisher and contact",
+          "body": "Loomah is published by the Loomah team. For any question, you can contact us at contact@loomah.fr."
+        },
+        {
+          "title": "Service",
+          "body": "Loomah helps parents find cafés, restaurants, parks, activities and other places suitable for young children. The website presents Loomah, lets you join the waitlist and may provide launch information. The mobile app lets you create an account, browse a map, view place pages and save favourites."
+        },
+        {
+          "title": "User account",
+          "body": "Some app features require an account. You must provide accurate information, including your email, username and, if this option is added, your name. You must keep your credentials confidential and notify us if you suspect unauthorised use. You may request or perform account deletion when this feature is available."
+        },
+        {
+          "title": "Acceptable use",
+          "body": "You agree to use Loomah lawfully, reasonably and respectfully. You must not try to access our systems without permission, disrupt the service, bypass security rules or use Loomah to harm others."
+        },
+        {
+          "title": "Place information",
+          "body": "We do our best to provide useful and up-to-date information, but opening hours, amenities, prices, stroller access and family policies can change. Before an important trip, check the details directly with the relevant place."
+        },
+        {
+          "title": "Map and location",
+          "body": "The map and nearby results depend on your position, if you allow it, or the area shown on the map. Distances, results and routes are provided for convenience and may be incomplete or inaccurate."
+        },
+        {
+          "title": "Service improvement",
+          "body": "We may analyze use of the website and app to understand which features are useful, fix problems and improve Loomah. This does not allow you to disrupt the service, extract our data at scale or bypass security mechanisms."
+        },
+        {
+          "title": "Intellectual property",
+          "body": "The Loomah brand, design, texts, interfaces, databases and content created by Loomah remain our property or the property of our partners. You may not copy, extract or substantially reuse them without permission."
+        },
+        {
+          "title": "Availability",
+          "body": "Loomah is still in development. We may modify, suspend or stop all or part of the service, including for maintenance, security, product changes or technical constraints."
+        },
+        {
+          "title": "Liability",
+          "body": "Loomah does not replace your judgement or the information provided by places themselves. To the extent permitted by law, we are not responsible for decisions made based on information that is inaccurate, unavailable or changed after publication."
+        },
+        {
+          "title": "Contact",
+          "body": "For any question about these terms, email us at contact@loomah.fr."
+        }
+      ]
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "intro": "This policy explains the personal data processed when you use the Loomah website or Loomah mobile app.",
+      "sections": [
+        {
+          "title": "Controller",
+          "body": "The data controller is Loomah. For any question about your personal data, you can contact us at contact@loomah.fr."
+        },
+        {
+          "title": "Data collected on the website",
+          "body": "When you join the waitlist, we collect your email address so we can send you launch updates. If you contact us, we also collect the information included in your message and our exchanges. We may also collect technical and browsing data on the website, such as pages viewed, buttons used, browser, device type, date, time and technical identifiers."
+        },
+        {
+          "title": "Data collected in the app",
+          "body": "When you create an account, we collect your username, email address and password. Later, we may also ask for your name if this becomes useful for the service. The app may process your login token, favourites, password reset requests, email change requests, related temporary codes and app usage events."
+        },
+        {
+          "title": "Location",
+          "body": "With your permission, the app uses your location to show your position on the map and find nearby places. When you browse the map, the coordinates of the visible area may be sent to our backend and mapping provider to return nearby places. We do not currently associate a location history with your account."
+        },
+        {
+          "title": "Why we use your data",
+          "body": "We use your data to provide the service, manage your account, show places and favourites, secure authentication, send account-related emails, answer your messages, measure use of the website and app, improve Loomah and comply with legal obligations."
+        },
+        {
+          "title": "Legal bases",
+          "body": "Depending on the case, we process your data to provide the requested service, based on your consent, to comply with legal obligations or for our legitimate interest in securing and improving Loomah. You can withdraw consent when processing is based on it, for example location access through your device settings or certain trackers through the website consent settings."
+        },
+        {
+          "title": "Audience measurement and analytics",
+          "body": "We may use third-party audience measurement and product analytics tools to understand use of the website and mobile app. Events sent may include actions performed in Loomah, screens or pages viewed, features used, technical device information, language, approximate country, technical identifiers and, when needed, a user identifier. We avoid sending sensitive or unnecessary information to these tools, such as passwords, private message content or precise location when it is not needed. Where required by law, we ask for consent before placing or reading trackers that are not strictly necessary."
+        },
+        {
+          "title": "Providers and sharing",
+          "body": "We do not sell your personal data. We may share it with technical providers and partners needed to run Loomah, including hosting, database, transactional email, mapping, security, support and product analytics providers. These providers process data on our behalf or under their own terms when you use their integrated services."
+        },
+        {
+          "title": "Retention",
+          "body": "We keep your waitlist email until you unsubscribe or until it is no longer useful for the launch. Account data is kept while your account exists. Reset and verification codes expire quickly. Some data may be kept longer if required by law or to secure the service."
+        },
+        {
+          "title": "Security",
+          "body": "We use reasonable measures to protect your data. The app stores the login token in secure device storage. No system is completely secure, and you must protect your password and device."
+        },
+        {
+          "title": "Your rights",
+          "body": "If you are in the European Union, you can request access, correction, deletion, restriction or portability of your data, and object to certain processing. You can exercise these rights by emailing contact@loomah.fr. You may also lodge a complaint with the competent authority, such as the CNIL in France."
+        },
+        {
+          "title": "Cookies and trackers",
+          "body": "The website may use trackers needed for its operation and, if enabled, audience measurement or product analytics trackers. The app may use similar technical identifiers to measure usage and diagnose problems. If these trackers are not strictly necessary, we will request consent when required by law and provide a way to withdraw it."
+        },
+        {
+          "title": "Updates",
+          "body": "We may update this policy as Loomah evolves. The update date shown at the top of the page identifies the applicable version."
+        }
+      ]
     }
   }
 }

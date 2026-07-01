@@ -12,6 +12,8 @@ interface FooterProps {
     contact: string;
     instagram: string;
     tiktok: string;
+    terms: string;
+    privacy: string;
     copyright: string;
     form: {
       placeholder: string;
@@ -63,6 +65,18 @@ export default function Footer({ dict, lang }: FooterProps) {
               className="focus-ring rounded-md transition-colors hover:text-terracotta-dark"
             >
               {dict.contact}
+            </a>
+            <a
+              href={`/${lang}/terms-of-us`}
+              className="focus-ring rounded-md transition-colors hover:text-terracotta-dark"
+            >
+              {dict.terms}
+            </a>
+            <a
+              href={`/${lang}/privacy-policy`}
+              className="focus-ring rounded-md transition-colors hover:text-terracotta-dark"
+            >
+              {dict.privacy}
             </a>
             <a
               href="https://www.instagram.com/loomah_app/"

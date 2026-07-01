@@ -25,13 +25,13 @@ export default function Header({ lang, dict }: HeaderProps) {
           aria-label="Navigation principale"
         >
           <a
-            href="#how"
+            href={`/${lang}#how`}
             className="focus-ring rounded-md text-sm font-bold text-muted transition-colors hover:text-ink"
           >
             {dict.how}
           </a>
           <a
-            href="#why"
+            href={`/${lang}#why`}
             className="focus-ring rounded-md text-sm font-bold text-muted transition-colors hover:text-ink"
           >
             {dict.why}
@@ -41,7 +41,7 @@ export default function Header({ lang, dict }: HeaderProps) {
         <div className="flex items-center gap-2 sm:gap-4">
           <LanguageSwitcher currentLang={lang} />
           <a
-            href="#waitlist"
+            href={`/${lang}#waitlist`}
             className="focus-ring group hidden items-center gap-2 rounded-xl bg-terracotta px-5 py-3 text-sm font-bold text-white shadow-[0_10px_24px_rgba(152,75,53,0.16)] transition duration-300 hover:-translate-y-0.5 hover:bg-terracotta-dark active:translate-y-0 sm:inline-flex"
           >
             {dict.waitlist}

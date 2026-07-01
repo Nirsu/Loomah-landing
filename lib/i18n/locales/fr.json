@@ -80,6 +80,8 @@
     "contact": "Nous écrire",
     "instagram": "Instagram",
     "tiktok": "TikTok",
+    "terms": "CGU",
+    "privacy": "Confidentialité",
     "copyright": "Tous droits réservés.",
     "form": {
       "placeholder": "Votre adresse email",
@@ -88,6 +90,118 @@
       "invalid": "Saisissez une adresse email valide.",
       "success": "Vous êtes sur la liste. À très vite.",
       "error": "L’inscription est momentanément indisponible. Réessayez bientôt."
+    }
+  },
+  "legal": {
+    "back_home": "Retour à l’accueil",
+    "updated": "Dernière mise à jour : 1er juillet 2026",
+    "terms": {
+      "title": "Conditions générales d’utilisation",
+      "intro": "Ces conditions encadrent l’utilisation du site web Loomah et de l’application mobile Loomah.",
+      "sections": [
+        {
+          "title": "Éditeur et contact",
+          "body": "Loomah est édité par l’équipe Loomah. Pour toute question, vous pouvez nous écrire à contact@loomah.fr."
+        },
+        {
+          "title": "Objet du service",
+          "body": "Loomah aide les parents à trouver des cafés, restaurants, parcs, activités et autres lieux adaptés aux jeunes enfants. Le site web présente Loomah, permet de rejoindre la liste d’attente et peut proposer des informations de lancement. L’application mobile permet de créer un compte, consulter une carte, voir des fiches lieux et enregistrer des favoris."
+        },
+        {
+          "title": "Compte utilisateur",
+          "body": "Certaines fonctionnalités de l’application nécessitent un compte. Vous devez fournir des informations exactes, notamment votre email, votre nom d’utilisateur et, si cette option est ajoutée, votre nom. Vous devez garder vos identifiants confidentiels et nous prévenir en cas d’utilisation non autorisée. Vous pouvez demander ou effectuer la suppression de votre compte lorsque cette fonction est disponible."
+        },
+        {
+          "title": "Utilisation acceptable",
+          "body": "Vous vous engagez à utiliser Loomah de manière légale, raisonnable et respectueuse. Il est interdit de tenter d’accéder sans autorisation à nos systèmes, de perturber le service, de contourner nos règles de sécurité ou d’utiliser Loomah pour nuire à des tiers."
+        },
+        {
+          "title": "Informations sur les lieux",
+          "body": "Nous faisons de notre mieux pour proposer des informations utiles et à jour, mais les horaires, équipements, prix, accès poussette ou conditions d’accueil peuvent changer. Avant un déplacement important, vérifiez les informations directement auprès du lieu concerné."
+        },
+        {
+          "title": "Carte et localisation",
+          "body": "La carte et les résultats à proximité dépendent de votre position, si vous l’autorisez, ou de la zone affichée sur la carte. Les distances, résultats et itinéraires sont fournis à titre indicatif et peuvent être incomplets ou imprécis."
+        },
+        {
+          "title": "Amélioration du service",
+          "body": "Nous pouvons analyser l’utilisation du site web et de l’application pour comprendre quelles fonctionnalités sont utiles, corriger les problèmes et améliorer Loomah. Ces analyses ne vous autorisent pas à perturber le service, extraire massivement nos données ou contourner les mécanismes de sécurité."
+        },
+        {
+          "title": "Propriété intellectuelle",
+          "body": "La marque Loomah, le design, les textes, interfaces, bases de données et contenus créés par Loomah restent notre propriété ou celle de nos partenaires. Vous ne pouvez pas les copier, extraire ou réutiliser de manière substantielle sans autorisation."
+        },
+        {
+          "title": "Disponibilité",
+          "body": "Loomah est encore en développement. Nous pouvons modifier, suspendre ou arrêter tout ou partie du service, notamment pour maintenance, sécurité, évolution produit ou contraintes techniques."
+        },
+        {
+          "title": "Responsabilité",
+          "body": "Loomah ne remplace pas votre jugement ni les informations fournies par les lieux eux-mêmes. Dans la limite autorisée par la loi, nous ne sommes pas responsables des décisions prises sur la base d’informations inexactes, indisponibles ou modifiées après leur publication."
+        },
+        {
+          "title": "Contact",
+          "body": "Pour toute question sur ces conditions, écrivez-nous à contact@loomah.fr."
+        }
+      ]
+    },
+    "privacy": {
+      "title": "Politique de confidentialité",
+      "intro": "Cette politique explique les données personnelles traitées lorsque vous utilisez le site web Loomah ou l’application mobile Loomah.",
+      "sections": [
+        {
+          "title": "Responsable du traitement",
+          "body": "Le responsable du traitement est Loomah. Pour toute question relative à vos données personnelles, vous pouvez nous contacter à contact@loomah.fr."
+        },
+        {
+          "title": "Données collectées sur le site web",
+          "body": "Lorsque vous rejoignez la liste d’attente, nous collectons votre adresse email afin de vous tenir informé du lancement. Si vous nous écrivez, nous collectons aussi les informations contenues dans votre message et nos échanges. Nous pouvons aussi collecter des données techniques et de navigation sur le site, comme les pages consultées, les boutons utilisés, le navigateur, le type d’appareil, la date, l’heure et des identifiants techniques."
+        },
+        {
+          "title": "Données collectées dans l’application",
+          "body": "Lorsque vous créez un compte, nous collectons votre nom d’utilisateur, votre adresse email et votre mot de passe. Plus tard, nous pouvons aussi vous demander votre nom si cette information devient utile au fonctionnement du service. L’application peut traiter votre jeton de connexion, vos favoris, vos demandes de réinitialisation de mot de passe, vos demandes de changement d’email, les codes temporaires associés et des événements d’usage de l’application."
+        },
+        {
+          "title": "Localisation",
+          "body": "Avec votre autorisation, l’application utilise votre position pour afficher votre emplacement sur la carte et trouver les lieux proches. Lorsque vous consultez la carte, les coordonnées de la zone affichée peuvent être envoyées à notre backend et à notre prestataire de cartographie afin de retourner les lieux à proximité. Nous n’associons pas actuellement d’historique de localisation à votre compte."
+        },
+        {
+          "title": "Pourquoi nous utilisons vos données",
+          "body": "Nous utilisons vos données pour fournir le service, gérer votre compte, afficher les lieux et favoris, sécuriser l’authentification, envoyer les emails nécessaires au fonctionnement du compte, répondre à vos messages, mesurer l’utilisation du site web et de l’application, améliorer Loomah et respecter nos obligations légales."
+        },
+        {
+          "title": "Bases légales",
+          "body": "Selon les cas, nous traitons vos données pour exécuter le service demandé, sur la base de votre consentement, pour répondre à nos obligations légales ou pour notre intérêt légitime à sécuriser et améliorer Loomah. Vous pouvez retirer votre consentement lorsque le traitement repose sur celui-ci, par exemple pour la localisation via les réglages de votre appareil ou pour certains traceurs via les réglages de consentement du site."
+        },
+        {
+          "title": "Mesure d’audience et analytics",
+          "body": "Nous pouvons utiliser des outils tiers de mesure d’audience et d’analyse produit pour comprendre l’utilisation du site web et de l’application mobile. Les événements transmis peuvent inclure des actions réalisées dans Loomah, les écrans ou pages consultés, les fonctionnalités utilisées, des informations techniques sur l’appareil, la langue, le pays approximatif, des identifiants techniques et, lorsque c’est nécessaire, un identifiant utilisateur. Nous évitons d’envoyer à ces outils des informations sensibles ou inutiles, comme le mot de passe, le contenu privé de vos messages ou une localisation précise non nécessaire. Lorsque la loi l’exige, nous demandons votre consentement avant de déposer ou lire des traceurs non strictement nécessaires."
+        },
+        {
+          "title": "Prestataires et partage",
+          "body": "Nous ne vendons pas vos données personnelles. Nous pouvons les partager avec des prestataires techniques et partenaires nécessaires au fonctionnement de Loomah, notamment l’hébergement, la base de données, l’envoi d’emails transactionnels, la cartographie, la sécurité, le support et l’analyse produit. Ces prestataires traitent les données pour notre compte ou selon leurs propres conditions lorsque vous utilisez leurs services intégrés."
+        },
+        {
+          "title": "Conservation",
+          "body": "Nous conservons votre email de liste d’attente jusqu’à votre désinscription ou jusqu’à ce qu’il ne soit plus utile au lancement. Les données de compte sont conservées tant que votre compte existe. Les codes de réinitialisation et de vérification expirent rapidement. Certaines données peuvent être conservées plus longtemps si la loi l’exige ou pour assurer la sécurité du service."
+        },
+        {
+          "title": "Sécurité",
+          "body": "Nous mettons en place des mesures raisonnables pour protéger vos données. L’application stocke le jeton de connexion dans un stockage sécurisé de l’appareil. Aucun système n’est toutefois totalement sécurisé, et vous devez protéger votre mot de passe et votre appareil."
+        },
+        {
+          "title": "Vos droits",
+          "body": "Si vous êtes dans l’Union européenne, vous pouvez demander l’accès, la rectification, l’effacement, la limitation ou la portabilité de vos données, et vous opposer à certains traitements. Vous pouvez exercer ces droits en écrivant à contact@loomah.fr. Vous pouvez aussi déposer une réclamation auprès de l’autorité compétente, par exemple la CNIL en France."
+        },
+        {
+          "title": "Cookies et traceurs",
+          "body": "Le site web peut utiliser des traceurs nécessaires à son fonctionnement et, si nous l’activons, des traceurs de mesure d’audience ou d’analyse produit. L’application peut utiliser des identifiants techniques similaires pour mesurer l’usage et diagnostiquer les problèmes. Si ces traceurs ne sont pas strictement nécessaires, nous demanderons le consentement lorsque la loi l’exige et proposerons un moyen de le retirer."
+        },
+        {
+          "title": "Mise à jour",
+          "body": "Nous pouvons mettre à jour cette politique lorsque Loomah évolue. La date de mise à jour indiquée en haut de page permet d’identifier la version applicable."
+        }
+      ]
     }
   }
 }
