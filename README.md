@@ -11,15 +11,13 @@ pnpm dev
 
 The French page is available at `http://localhost:3000/fr`, and the English page at `http://localhost:3000/en`.
 
-## Waitlist
+## Newsletter
 
-The form adds new signups to Resend Contacts. Create a `.env.local` file based on `.env.example`, then set `RESEND_API_KEY`.
+The form posts signups to the backend newsletter endpoint:
 
-`RESEND_WAITLIST_SEGMENT_ID` is optional. When provided, new contacts are added directly to the corresponding segment.
+`POST /api/newsletter` with `{ "email": "test@example.com", "locale": "fr" }`, where `locale` is `fr` or `en`.
 
-Without an API key, the form intentionally displays an error instead of simulating a successful signup.
-
-The API key is only read by the server-side route and must never use the `NEXT_PUBLIC_` prefix.
+Set `NEXT_PUBLIC_API_URL` to the backend API URL, for example `http://localhost:3000/api`. The form calls `${NEXT_PUBLIC_API_URL}/newsletter`.
 
 ## Verification
 

@@ -3,12 +3,12 @@
     "skip": "Skip to content",
     "how": "How it works",
     "why": "Why Loomah",
-    "waitlist": "Join the waitlist"
+    "waitlist": "Newsletter"
   },
   "hero": {
     "title": "Going out with little ones starts with the right place.",
     "description": "Loomah helps you find nearby cafés, restaurants, activities and places that truly welcome young children.",
-    "proof": "Free early access, no commitment",
+    "proof": "Coming soon to the app stores",
     "categories": ["Cafés", "Restaurants", "Playgrounds", "Activities", "Coworking"],
     "preview_label": "Before you go",
     "preview_title": "Check what really matters",
@@ -17,10 +17,10 @@
     "amenity_play": "Play area",
     "form": {
       "placeholder": "Your email address",
-      "button": "Join the waitlist",
+      "button": "Get updates",
       "privacy": "Only useful updates about the launch.",
       "invalid": "Enter a valid email address.",
-      "success": "You’re on the list. See you soon.",
+      "success": "You're subscribed. See you soon.",
       "error": "Signup is temporarily unavailable. Please try again soon."
     }
   },
@@ -31,7 +31,7 @@
     "steps": [
       {
         "number": "01",
-        "title": "See what’s nearby",
+        "title": "See what's nearby",
         "description": "Explore the map and discover family-friendly places close to you or around your next destination.",
         "detail": "Cafés, parks, restaurants, activities and more"
       },
@@ -64,7 +64,7 @@
       },
       {
         "title": "A community that helps",
-        "description": "Parents share discoveries and feedback to make everyone’s next day together a little easier."
+        "description": "Parents share discoveries and feedback to make everyone's next day together a little easier."
       }
     ],
     "category_label": "One map for all your family plans",
@@ -74,8 +74,8 @@
   "footer": {
     "eyebrow": "Loomah is coming soon",
     "title": "Be among the first to explore.",
-    "description": "Join the waitlist for launch updates and get access as soon as the app becomes available.",
-    "download_note": "At launch, this form will be replaced by App Store and Google Play links.",
+    "description": "Subscribe to the newsletter for launch updates and App Store and Google Play links as soon as they are available.",
+    "download_note": "App Store and Google Play links are coming soon.",
     "tagline": "The right places for the little family moments.",
     "contact": "Contact us",
     "instagram": "Instagram",
@@ -85,10 +85,10 @@
     "copyright": "All rights reserved.",
     "form": {
       "placeholder": "Your email address",
-      "button": "Join the waitlist",
+      "button": "Get updates",
       "privacy": "Your address stays private. No spam.",
       "invalid": "Enter a valid email address.",
-      "success": "You’re on the list. See you soon.",
+      "success": "You're subscribed. See you soon.",
       "error": "Signup is temporarily unavailable. Please try again soon."
     }
   },
@@ -105,7 +105,7 @@
         },
         {
           "title": "Service",
-          "body": "Loomah helps parents find cafés, restaurants, parks, activities and other places suitable for young children. The website presents Loomah, lets you join the waitlist and may provide launch information. The mobile app lets you create an account, browse a map, view place pages and save favourites."
+          "body": "Loomah helps parents find cafés, restaurants, parks, activities and other places suitable for young children. The website presents Loomah, lets you subscribe to the newsletter and may provide launch information. The mobile app lets you create an account, browse a map, view place pages and save favourites."
         },
         {
           "title": "User account",
@@ -155,7 +155,7 @@
         },
         {
           "title": "Data collected on the website",
-          "body": "When you join the waitlist, we collect your email address so we can send you launch updates. If you contact us, we also collect the information included in your message and our exchanges. We may also collect technical and browsing data on the website, such as pages viewed, buttons used, browser, device type, date, time and technical identifiers."
+          "body": "When you subscribe to the newsletter, we collect your email address so we can send you launch updates. If you contact us, we also collect the information included in your message and our exchanges. We may also collect technical and browsing data on the website, such as pages viewed, buttons used, browser, device type, date, time and technical identifiers."
         },
         {
           "title": "Data collected in the app",
@@ -183,7 +183,7 @@
         },
         {
           "title": "Retention",
-          "body": "We keep your waitlist email until you unsubscribe or until it is no longer useful for the launch. Account data is kept while your account exists. Reset and verification codes expire quickly. Some data may be kept longer if required by law or to secure the service."
+          "body": "We keep your newsletter email until you unsubscribe or until it is no longer useful for the launch. Account data is kept while your account exists. Reset and verification codes expire quickly. Some data may be kept longer if required by law or to secure the service."
         },
         {
           "title": "Security",

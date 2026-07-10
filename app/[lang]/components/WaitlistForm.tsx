@@ -18,6 +18,8 @@ interface WaitlistFormProps {
 
 type FormStatus = "idle" | "loading" | "success" | "error";
 
+const API_URL = (process.env.NEXT_PUBLIC_API_URL ?? "").replace(/\/$/, "");
+
 export default function WaitlistForm({
   dict,
   lang,
@@ -42,13 +44,12 @@ export default function WaitlistForm({
     setMessage("");
 
     try {
-      const response = await fetch("/api/waitlist", {
+      const response = await fetch(`${API_URL}/newsletter`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           email,
-          lang,
-          company: formData.get("company"),
+          locale: lang,
         }),
       });
 
@@ -71,15 +72,6 @@ export default function WaitlistForm({
       className={compact ? "max-w-xl" : "max-w-[34rem]"}
       noValidate
     >
-      <div className="sr-only" aria-hidden="true">
-        <label htmlFor={`company-${compact}`}>Company</label>
-        <input
-          id={`company-${compact}`}
-          name="company"
-          tabIndex={-1}
-          autoComplete="off"
-        />
-      </div>
       <div className="flex flex-col gap-3 sm:flex-row">
         <label className="sr-only" htmlFor={`email-${compact}`}>
           Email
