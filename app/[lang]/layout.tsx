@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
-import { Nunito } from "next/font/google";
+import localFont from "next/font/local";
 import "../globals.css";
 import { i18n, type Locale } from "@/lib/i18n/config";
 
-const nunito = Nunito({
+const nunito = localFont({
+  src: "../../public/fonts/Nunito-Variable.ttf",
   variable: "--font-nunito",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
+  weight: "200 1000",
+  display: "swap",
 });
 
 export async function generateStaticParams() {
@@ -19,16 +20,18 @@ export async function generateMetadata({
   params: Promise<{ lang: string }>;
 }): Promise<Metadata> {
   const { lang: langParam } = await params;
-  const lang = (i18n.locales.includes(langParam as Locale) ? langParam : i18n.defaultLocale) as Locale;
-  
+  const lang = (
+    i18n.locales.includes(langParam as Locale) ? langParam : i18n.defaultLocale
+  ) as Locale;
+
   const metadata = {
     en: {
-      title: "Loomah – For the little moments that matter",
+      title: "Loomah – Family days out, made simple.",
       description:
         "Find baby-friendly and kid-friendly places around you. Cafés, restaurants, parks and spaces that welcome families. Go out without stress.",
     },
     fr: {
-      title: "Loomah – Les bonnes adresses pour sortir avec vos enfants",
+      title: "Loomah – Sortir en famille, tout simplement.",
       description:
         "Découvrez autour de vous les cafés, restaurants, activités et lieux vraiment adaptés aux familles avec de jeunes enfants.",
     },
@@ -52,7 +55,7 @@ export async function generateMetadata({
       title: metadata[lang].title,
       description: metadata[lang].description,
       type: "website",
-      images: ["/screen_app.png"],
+      images: ["/illustrations/hero-neighborhood.webp"],
     },
   };
 }
@@ -65,10 +68,12 @@ export default async function RootLayout({
   params: Promise<{ lang: string }>;
 }>) {
   const { lang: langParam } = await params;
-  const lang = (i18n.locales.includes(langParam as Locale) ? langParam : i18n.defaultLocale) as Locale;
-  
+  const lang = (
+    i18n.locales.includes(langParam as Locale) ? langParam : i18n.defaultLocale
+  ) as Locale;
+
   return (
-    <html lang={lang}>
+    <html lang={lang} data-scroll-behavior="smooth">
       <body className={`${nunito.variable} font-sans antialiased`}>
         {children}
       </body>

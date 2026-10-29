@@ -1,0 +1,35 @@
+LOOMAH V3 — ILLUSTRATION SOURCES
+
+Created 2026-10-15. Illustrations generated with the built-in ImageGen tool.
+No image from the Reddit post was copied into this project. Its landscape-footer
+composition was a design reference. The existing store screenshot direction B
+provided the family, neighbourhood and colour direction.
+
+hero-neighborhood.webp
+New square hero illustration, generated in this chat. Original:
+C:/Users/Meru/.codex/generated_images/01a13fcc-0e11-7300-b34d-e34be248c907/exec-e7cffe9d-4a8e-439f-997c-dd7cdf57e0bd.png
+Prompt:
+Use case: illustration-story. Create a square hand-painted gouache illustration for the hero section of Loomah, a French family outings app. Beautiful sophisticated children's picture book style, expressive painterly foliage, soft grainy ivory paper #fffaf2, peach Paris neighborhood townhouses, orange and ivory striped cafe awning along the far right edge, sage green park and cast iron lamp on the far left. A mother in navy striped shirt, blue jeans, orange tote bag walks holding hands with her young child wearing an orange top and sage green trousers in the LOWER LEFT CORNER. Both people fully visible including feet, small scale occupying bottom left 35 percent width and bottom 33 percent height. Family warm natural anatomy and clear expressive faces, view from three-quarter behind, child pointing toward the garden. Plants and flowers along the very bottom edge. Essential composition: middle vertical area x=39%-78%, y=12%-90% reserved as almost empty pale warm ivory sky and pale path for compositing a real app phone later. Keep rich architecture and trees to outer margins, no obstructions in central phone zone. Tree canopy at top corners. Entire composition square, no cropped people. Warm bright daylight, charming optimistic scene, gentle mint and olive greens, buttery cream, peach, restrained warm orange, matching premium watercolor family app store illustration style. No phones, no screens, no UI, no rectangles, no typography, no logos, no text, no watermark.
+
+footer-neighborhood.webp
+New panoramic footer illustration, generated in this chat. Original:
+C:/Users/Meru/.codex/generated_images/01a13fcc-0e11-7300-b34d-e34be248c907/exec-b8d4df93-76ea-41be-8997-dd8ed1090859.png
+Prompt:
+Use case: illustration-story. Asset type: wide panoramic footer illustration for Loomah, a warm French family outings app. Create a polished hand-painted gouache and watercolor editorial illustration, landscape aspect ratio 3:1. A charming Paris neighborhood turning into a leafy public garden, soft peach and butter-yellow townhouses and a tiny cafe with striped orange awning on the far left, soft sage green park gate on the right, mature green trees framing both outer edges, a winding warm ivory walking path across the lower half, parents with small children strolling and a parent pushing a stroller, small figures naturally integrated into the scene. Warm late afternoon sunshine, gentle painterly brushwork and subtle paper grain, sophisticated picture-book warmth, restrained terracotta-orange accents, leafy olive and mint greens, cream and peach. Composition: top 35 percent almost empty uninterrupted warm ivory #fffaf2 sky, trees and rooftops with organic silhouettes rising from lower landscape, full richly illustrated lower 65 percent, greenery filling both bottom corners, inviting winding path leading into scene. No text, no lettering, no logo, no screens, no phones, no UI, no watermarks. Natural anatomy. This must feel like a real lovingly illustrated children's book spread, not flat vector clipart or generic digital 3D art.
+
+cafe.webp: reused from ../output/store-screenshots/series-v5/assets/cafe-interior.png
+park.webp: reused from ../output/store-screenshots/series-v3/assets/park.png
+library.webp: reused from ../output/store-screenshots/series-v3/assets/library.png
+These existing ImageGen illustrations belong to the selected store screenshot B direction.
+
+All five assets were encoded as WebP quality 85, without visual content changes.
+The hero is 1254 x 1254; the footer is 2172 x 724. Portrait assets retain their ratio.
+
+../screenshots/map-fr.jpg is the real French app capture from
+../output/store-screenshots/series-v1/assets/map-fr.jpg. The phone frame is CSS,
+not the external 3D phone model used in the store mockups. The English landing
+explicitly labels the French app preview.
+
+Nunito: official Google Fonts variable font, SIL OFL 1.1.
+https://github.com/google/fonts/tree/main/ofl/nunito
+See ../fonts/OFL.txt for the full licence.

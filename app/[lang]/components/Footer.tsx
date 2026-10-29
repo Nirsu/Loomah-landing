@@ -1,6 +1,5 @@
 import Image from "next/image";
 import WaitlistForm from "./WaitlistForm";
-
 interface FooterProps {
   lang: string;
   dict: {
@@ -25,80 +24,96 @@ interface FooterProps {
     };
   };
 }
-
 export default function Footer({ dict, lang }: FooterProps) {
+  const fr = lang === "fr";
   return (
-    <footer id="waitlist" className="scroll-mt-20 bg-white">
-      <div className="mx-auto max-w-[82rem] px-5 py-24 sm:px-8 sm:py-32 lg:px-12">
-        <div className="relative overflow-hidden rounded-[2rem] bg-terracotta-soft px-6 py-14 sm:px-12 sm:py-16 lg:px-20">
-          <div className="absolute -right-20 -top-28 h-80 w-80 rounded-full border-[70px] border-white/30" />
-          <div className="absolute -bottom-24 left-[42%] h-48 w-48 rounded-full bg-white/20" />
-          <div className="relative max-w-3xl">
-            <p className="text-sm font-extrabold uppercase tracking-[0.18em] text-terracotta-dark">
-              {dict.eyebrow}
-            </p>
-            <h2 className="font-display text-balance mt-4 text-5xl leading-[0.98] tracking-[-0.04em] sm:text-6xl">
-              {dict.title}
-            </h2>
-            <p className="text-pretty mt-6 max-w-2xl text-lg leading-8 text-muted">
-              {dict.description}
-            </p>
-            <div className="mt-8">
-              <WaitlistForm dict={dict.form} lang={lang} compact />
-            </div>
-            <p className="mt-5 text-sm font-bold text-terracotta-dark">
-              {dict.download_note}
-            </p>
-          </div>
+    <footer className="site-footer">
+      <section
+        id="waitlist"
+        className="waitlist-section wrap"
+        aria-labelledby="waitlist-title"
+      >
+        <p className="eyebrow">{dict.eyebrow}</p>
+        <h2 id="waitlist-title">
+          {fr ? (
+            <>
+              Les belles sorties
+              <br />
+              commencent <span>ici.</span>
+            </>
+          ) : (
+            <>
+              Lovely outings
+              <br />
+              start <span>here.</span>
+            </>
+          )}
+        </h2>
+        <p className="waitlist-description">{dict.description}</p>
+        <WaitlistForm dict={dict.form} lang={lang} compact />
+        <p className="store-note">
+          {fr
+            ? "Bientôt sur iOS et Android."
+            : "Coming soon to iOS and Android."}
+        </p>
+      </section>
+      <div className="footer-links wrap">
+        <div className="footer-brand">
+          <a href={`/${lang}`} aria-label="Loomah">
+            <Image src="/logo.svg" alt="Loomah" width={325} height={139} />
+          </a>
+          <p>{dict.tagline}</p>
+        </div>
+        <div>
+          <h3>{fr ? "Découvrir Loomah" : "Discover Loomah"}</h3>
+          <a href={`/${lang}#discover`}>
+            {fr ? "L’univers Loomah" : "The Loomah world"}
+          </a>
+          <a href={`/${lang}#how`}>
+            {fr ? "Comment ça marche" : "How it works"}
+          </a>
+          <a href={`/${lang}#why`}>{fr ? "Notre histoire" : "Our story"}</a>
+        </div>
+        <div>
+          <h3>{fr ? "Restons en contact" : "Stay in touch"}</h3>
+          <a href="mailto:contact@loomah.fr">{dict.contact}</a>
+          <a
+            href="https://www.instagram.com/loomah_app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {dict.instagram}
+          </a>
+          <a
+            href="https://tiktok.com/@loomah_app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {dict.tiktok}
+          </a>
+        </div>
+        <div>
+          <h3>{fr ? "Informations légales" : "Legal information"}</h3>
+          <a href={`/${lang}/privacy-policy`}>{dict.privacy}</a>
+          <a href={`/${lang}/terms-of-us`}>{dict.terms}</a>
         </div>
       </div>
-
-      <div className="border-t border-line">
-        <div className="mx-auto grid max-w-[82rem] gap-8 px-5 py-10 sm:px-8 md:grid-cols-[1fr_auto] md:items-end lg:px-12">
-          <div>
-            <Image src="/logo.svg" alt="Loomah" width={116} height={50} />
-            <p className="mt-3 text-sm text-muted">{dict.tagline}</p>
-          </div>
-          <div className="flex flex-col gap-4 text-sm font-bold text-muted sm:flex-row sm:items-center sm:gap-7">
-            <a
-              href="mailto:contact@loomah.fr"
-              className="focus-ring rounded-md transition-colors hover:text-terracotta-dark"
-            >
-              {dict.contact}
-            </a>
-            <a
-              href={`/${lang}/terms-of-us`}
-              className="focus-ring rounded-md transition-colors hover:text-terracotta-dark"
-            >
-              {dict.terms}
-            </a>
-            <a
-              href={`/${lang}/privacy-policy`}
-              className="focus-ring rounded-md transition-colors hover:text-terracotta-dark"
-            >
-              {dict.privacy}
-            </a>
-            <a
-              href="https://www.instagram.com/loomah_app/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="focus-ring rounded-md transition-colors hover:text-terracotta-dark"
-            >
-              {dict.instagram}
-            </a>
-            <a
-              href="https://tiktok.com/@loomah_app"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="focus-ring rounded-md transition-colors hover:text-terracotta-dark"
-            >
-              {dict.tiktok}
-            </a>
-            <span className="font-medium text-muted/70">
-              © {new Date().getFullYear()} Loomah. {dict.copyright}
-            </span>
-          </div>
-        </div>
+      <div className="footer-bottom wrap">
+        <span>© {new Date().getFullYear()} Loomah</span>
+        <span>
+          {fr
+            ? "Fait avec ❤️ par des parents pour des parents"
+            : "Made with ❤️ by parents, for parents"}
+        </span>
+      </div>
+      <div className="footer-landscape">
+        <Image
+          src="/illustrations/footer-neighborhood-v2.webp"
+          alt=""
+          width={2172}
+          height={724}
+          sizes="100vw"
+        />
       </div>
     </footer>
   );
