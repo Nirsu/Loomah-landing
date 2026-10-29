@@ -18,7 +18,6 @@ interface WaitlistFormProps {
 
 type FormStatus = "idle" | "loading" | "success" | "error";
 
-const API_URL = (process.env.NEXT_PUBLIC_API_URL ?? "").replace(/\/$/, "");
 
 export default function WaitlistForm({
   dict,
@@ -44,7 +43,7 @@ export default function WaitlistForm({
     setMessage("");
 
     try {
-      const response = await fetch(`${API_URL}/newsletter`, {
+      const response = await fetch("/api/newsletter", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
